@@ -1,0 +1,4 @@
+<select ng-model="project">
+    <option ng-repeat="n in [].constructor(10) track by $index" ng-value="$index">Project item{{$index}}</option>
+</select>
+<button ui-sref="app.projectnew">New</button>

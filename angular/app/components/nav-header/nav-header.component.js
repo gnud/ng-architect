@@ -7,6 +7,8 @@ class NavHeaderController {
     ContextService.me(function (data) {
       navHeader.userData = data
     })
+
+
   }
 
   $onInit () {}

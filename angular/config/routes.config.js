@@ -30,6 +30,17 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         bodyClass: 'hold-transition skin-blue sidebar-mini'
       }
     })
+    .state('app.projects', {
+      url: '/projects',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          templateUrl: getView('projects')
+        }
+      }
+    })
     .state('app.landing', {
       url: '/',
       data: {
@@ -65,6 +76,17 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
     })
     .state('app.uimodal', {
       url: '/ui-modal',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          template: '<ui-modal></ui-modal>'
+        }
+      }
+    })
+    .state('app.projectnew', {
+      url: '/project-new',
       data: {
         auth: true
       },

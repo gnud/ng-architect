@@ -1,3 +1,5 @@
+import {ProjectNewComponent} from './app/components/project-new/project-new.component';
+import {NavHeaderMenuProjectsComponent} from './app/components/nav-header-menu-projects/nav-header-menu-projects.component';
 import { TablesSimpleComponent } from './app/components/tables-simple/tables-simple.component'
 import { UiModalComponent } from './app/components/ui-modal/ui-modal.component'
 import { UiTimelineComponent } from './app/components/ui-timeline/ui-timeline.component'
@@ -28,6 +30,8 @@ import { LoginFormComponent } from './app/components/login-form/login-form.compo
 import { RegisterFormComponent } from './app/components/register-form/register-form.component'
 
 angular.module('app.components')
+	.component('projectNew', ProjectNewComponent)
+	.component('navHeaderMenuProjects', NavHeaderMenuProjectsComponent)
   .component('tablesSimple', TablesSimpleComponent)
   .component('uiModal', UiModalComponent)
   .component('uiTimeline', UiTimelineComponent)
